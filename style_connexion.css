@@ -1,0 +1,50 @@
+html{
+    font:bold Arial;
+}
+body{
+	margin: 0 auto;
+	background-image: url("Lyon.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%; 
+}
+
+.form{
+	 font-family: 'Open Sans', sans-serif;
+	 color: white;
+	 position: absolute;
+	 background-color: black;
+	 opacity: 0.70; 
+	 border-radius: 2px;
+	 padding: 30px;
+	 left: 35%;
+	 top: 22%;
+	 text-align: center;
+}
+
+.champ{
+	 background-color: black;
+	 border: none;
+     border-bottom: 1px solid white;
+	 color: white;
+}
+
+.nouveau{
+	 border-top: 1px solid #CCCCCC;
+	 margin-top: 15px;
+	 padding-top: 15px;
+}
+
+.bouton{
+	padding:6px 0 6px 0;
+	font:bold 13px Arial;
+	background:#478bf9;
+	color:#fff;
+	border-radius:2px;
+	width:100px;
+	border:none;
+	opacity: 0.99;
+}
+
+.bouton:hover{
+	background:#0864f7;
+}
