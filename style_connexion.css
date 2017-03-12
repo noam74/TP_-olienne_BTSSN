@@ -1,50 +1,154 @@
-html{
-    font:bold Arial;
-}
 body{
-	margin: 0 auto;
-	background-image: url("Lyon.jpg");
+	margin: 0;
+	background-image: url("../img/fond_connexion.jpg");
 	background-repeat: no-repeat;
-	background-size: 100%; 
+	background-size: 110%; 
 }
 
-.form{
+.cadre{
 	 font-family: 'Open Sans', sans-serif;
 	 color: white;
-	 position: absolute;
+	 position: relative;
 	 background-color: black;
-	 opacity: 0.70; 
+	 opacity: 0.80;  
 	 border-radius: 2px;
 	 padding: 30px;
-	 left: 35%;
-	 top: 22%;
+	 margin-left: auto;
+	 margin-right: auto;
+	 width: 400px;
+	 margin-top: 46vh;
+     transform: translateY(-46%);
 	 text-align: center;
 }
 
-.champ{
-	 background-color: black;
-	 border: none;
-     border-bottom: 1px solid white;
-	 color: white;
+/* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
 }
 
-.nouveau{
-	 border-top: 1px solid #CCCCCC;
-	 margin-top: 15px;
-	 padding-top: 15px;
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
 }
 
-.bouton{
+/* Set a style for all buttons */
+button {
+    padding:6px 0 6px 0;
+	font:bold 13px Arial;
+	background-color: #2073f8;
+	color:#fff;
+	border-radius: 1px;
+	width:100px;
+	height: 30px;
+	border:none;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+	background-color: #075adf;
+	cursor: pointer;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
 	padding:6px 0 6px 0;
 	font:bold 13px Arial;
-	background:#478bf9;
+	background-color: #f44336;
 	color:#fff;
-	border-radius:2px;
+	border-radius: 1px;
 	width:100px;
+	height: 30px;
 	border:none;
-	opacity: 0.99;
 }
 
-.bouton:hover{
-	background:#0864f7;
+.cancelbtn:hover{
+	background-color: #f21c0d;
+	cursor: pointer;
+}
+
+.log{
+	margin-top: 10px;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+	font:bold 13px Arial;
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+	margin-top: 20vh;
+    width: 70%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0; 
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
 }
